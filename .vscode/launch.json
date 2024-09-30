@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Todos CLI}",
+            "name": "Debug Todos CLI",
+            "program": "${workspaceFolder:Todos CLI}/.build/debug/Todos CLI",
+            "preLaunchTask": "swift: Build Debug Todos CLI"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Todos CLI}",
+            "name": "Release Todos CLI",
+            "program": "${workspaceFolder:Todos CLI}/.build/release/Todos CLI",
+            "preLaunchTask": "swift: Build Release Todos CLI"
+        }
+    ]
+}
